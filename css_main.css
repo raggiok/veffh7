@@ -1,0 +1,9 @@
+.container {
+    display: flex;
+    width: 1000px;
+    align-content: center;
+}
+
+.navbar {
+    display: flex;
+}
