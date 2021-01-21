@@ -1,9 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&display=swap');
+
+/* General */
 .container {
     display: flex;
-    width: 1000px;
+    flex-wrap: wrap;
+    flex-flow: flex-start;
     align-content: center;
+    font-family: 'Roboto Mono', monospace;
 }
 
+h1 {
+    margin: 0;
+}
+
+/* Navbar */
 .navbar {
-    display: flex;
+    order: 1;
+    width: 300px;
+    height: 1000px;
+    border: 1px black;
+    background-color: #deebf7;
+}
+
+.navbar a {
+    color: #6d7479;
+    font-size: 24px;
+}
+
+.navitem {
+    margin-left: 20px;
+}
+
+.no-bullets {
+    list-style-type: none; /* Remove bullets */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margins */
+}
+
+/* Info cards */
+
+.item-card {
+    order: 2;
+    background-color: #deebf7;
+    margin-left: 20px;
+}
+
+.border-color {
+    border-left: solid 7px #9ac8e0;
+}
+
+
+
+
+/* Images */
+.image-box {
+    width: 50px;
+    height: 50px;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
 }
