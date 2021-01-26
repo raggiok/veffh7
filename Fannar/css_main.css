@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&display=swap');
+
+/* General */
+body {margin:0;padding: 0;}
+
+main {
+    width: 100%;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    font-family: 'Roboto Mono', monospace;
+}
+
+
+/* Navbar */
+.navbar {
+    flex: 1 1;
+    height: 100%;
+    border: 1px black;
+    background-color: #deebf7;
+    width: 300px;
+    text-align: center;
+}
+
+.navbar a {
+    color: #6d7479;
+    font-size: 28px;
+    display: inline-block;
+}
+
+.no-bullets {
+    list-style-type: none; /* Remove bullets */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margins */
+}
+
+/* Dropdown button*/
+ .dropdown {
+     display: flex;
+     background-color:#deebf7;
+     justify-content: center;
+     width: 100%;
+     height:auto;
+ }
+  .dropdown .dropbutton {
+      color: #deebf7;
+      background-color: #deebf7;
+      border: #deebf7;
+  }
+
+  .dropdown span {
+     display: flex;
+     justify-content: center;
+     width: 15px;
+     height: 2px;
+     margin-bottom: 3px;
+     color: #deebf7;
+     background-color: rgb(0, 0, 0);
+ }
+
+/* Info cards */
+
+.card-container {
+    display: flex;
+    flex: 1 1;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.item-card {
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    flex-wrap: wrap;
+    justify-content: start;
+    padding: 10px;
+    flex: 1 1;
+    min-width: 160px;
+    margin: 10px;
+    text-align: left;
+    font-size: 30%;
+    background-color: #deebf7;
+}
+
+.border-color {
+    border-left: solid 4px #9ac8e0;
+}
+
+
+
+
+/* Images */
+.image-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+img {
+    height: 30px;
+    margin-right: 10px;
+}
+
+/* Media queries */
+
+@media only screen and (max-width:650px) {
+    .navbar {display: none;}
+
+    .container {
+        flex-direction: column  ;
+    }
+
+    .card-container {
+        flex-direction: column;
+    }
+
+    .item-card {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        margin: 10px;
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width:651px) {
+    .dropdown {display: none;}
+}
