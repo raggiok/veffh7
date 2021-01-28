@@ -161,38 +161,6 @@ img {
       margin-top: 0.8em;
 }
 
-/* Sér stílar fyrir mobile upp í 500px */
-
-@media only screen and (max-width:500px){
-    .container{
-        font-size: small;
-      
-    }
-    .navbar {
-        display: none;
-    }
-
-    .container {
-        flex-direction: column  ;
-    }
-
-    .card-container {
-        flex-direction: column;
-    }
-
-    .item-card {
-        display: flex;
-        flex-direction: column;
-        align-content: center;
-        justify-content: center;
-        width: 100%;
-        margin-top: 2.5%;
-        margin-bottom: 2.5%;
-        margin-right: 10%;
-        margin-left: 2.5%;
-    }
-    
-}
 
 /* Sér stílar fyrir mobile upp í 650px */
 
@@ -202,21 +170,51 @@ img {
     }
     .navbar {display: none;}
 
+    h1 {
+        font-size: 0.7em;
+    }
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
 
+    }
 
     .container {
         flex-direction: column;
+        text-align: center;
     }
 
     .card-container {
         flex-direction: column;
+        width: 95%;
+        margin: 0;
+        margin-bottom: 0%;
+        height: 95%;
+    }
+
+    .card-header {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .image-box {
+        display: inline;
+        align-items: flex-start;
+        position: relative;
+        left: 37.5%;
+        bottom: 15px;
+        width: 25%;
+        height: 25%;
+        margin-bottom: 5%;
     }
 
     .item-card {
         display: flex;
         flex-direction: column;
-        align-content: center;
-        justify-content: center;
+        flex-wrap: wrap;
         width: 100%;
         margin-top: 2.5%;
         margin-bottom: 2.5%;
