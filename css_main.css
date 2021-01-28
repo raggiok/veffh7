@@ -2,7 +2,7 @@
 
 /* General */
 .container {
-    margin: auto;
+    
     height: 100%;
     width: 100%;
     display: flex;
@@ -129,7 +129,7 @@ img {
      background-color:#deebf7;
      justify-content: center;
      width: 100%;
-     height: 7%;
+     height: 8%;
      position: absolute;
      left: 0;
      top: 0;
@@ -162,7 +162,7 @@ img {
 
 @media only screen and (max-width:650px){
     .container{
-        margin-top: 0%;
+       
     }
     .navbar {display: none;}
 
@@ -222,13 +222,19 @@ img {
         height: 100%;
 
     }
+
+.hamburger{
+        font-family: helvetica;
+        margin-top: -0.5em;
+}
+
     a {
         text-decoration: none;
     }
-    .hamburger{
+    .hamburger a {
     
-        width: 20px;
-        height: 3px;
+        font-size: 4em;
+        color: black;
     }
 
 }
@@ -276,14 +282,7 @@ img {
 }
 
 
-/* Stílar sem eru spes frá mobile upp í 1000px 
 
-@media only screen and (max-width:1000px){
-    .container{
-        
-    }
-
-} */
 
 
 /* Stílar sem eru spes þegar skjástærð er yfir 1001px*/
